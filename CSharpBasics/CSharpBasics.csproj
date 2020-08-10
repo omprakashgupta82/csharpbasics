@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="AbstractClassDemo.cs" />
     <Compile Include="AccessModifiersDemo.cs" />
+    <Compile Include="Calculator\Add.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ConstructorDemo.cs" />
     <Compile Include="CovarianceAndContravarianceDemo.cs" />
