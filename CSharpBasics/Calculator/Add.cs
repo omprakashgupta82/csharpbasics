@@ -11,5 +11,10 @@ namespace CSharpBasics.Calculator
         {
             return a + b;
         }
+
+        private string Concate(string a, string b)
+        {
+            return a + b;
+        }
     }    
 }
