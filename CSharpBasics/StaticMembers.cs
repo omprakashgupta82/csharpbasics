@@ -61,5 +61,10 @@ namespace CSharpBasics
         {
             Console.WriteLine("No. of instances of class B are :" + counter.ToString());
         }
+
+        public void WriteMsg()
+        {
+            Console.WriteLine("No. of instances of class B are :" + counter.ToString());
+        }
     }
 }
