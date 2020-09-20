@@ -10,22 +10,43 @@ namespace CSharpBasics
         public static void Main()
         {
             CSharpAccessModifiers cam = new CSharpAccessModifiers();
-
+            
 
         }
     }
 
     public class CSharpAccessModifiers
     {
-        int iPrivateAccess = 0;
-        //public int iPublicAccess = 0;
+        /// <summary>
+        /// Accessible within the class
+        /// </summary>
+        private int iPrivateAccess = 0;
+
+        /// <summary>
+        /// Accessible everywhere
+        /// </summary>
+        public int iPublicAccess = 0;
+
+        /// <summary>
+        /// Accessible within the class as well as in inherited classes in same assembly or other assembly
+        /// </summary>
         protected int iProtectedAccess = 0;
+
+        /// <summary>
+        /// Accessible within the same assembly as well as in inherited classes
+        /// </summary>
         protected internal int iProtectedInternalAccess;
-        //internal int iInternalAccess = 0;
+
+        /// <summary>
+        /// Accessible only within the assembly
+        /// </summary>
+        internal int iInternalAccess = 0;
+
         //private protected int iPrivateProtected = 0;
 
         public string DisplayAge()
         {
+            iProtectedAccess += 1; 
             return iProtectedInternalAccess.ToString();
 
         }
