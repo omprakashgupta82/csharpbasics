@@ -29,8 +29,8 @@ namespace Om.Basics
             ChildModifiers cm = new ChildModifiers();
             cm.iProtectedInternalAccess = 45;
             cm.iProtectedAccess = 00;
-
-            
+            cm.iPublicAccess = 20;
+            cm.
         }
     }
 }
