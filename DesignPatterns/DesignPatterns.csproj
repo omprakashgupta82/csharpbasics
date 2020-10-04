@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DesignPatterns.Program</StartupObject>
+    <StartupObject>DesignPatterns.Creational.SimpleFactory.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,7 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Creational\SimpleFactory\DhlInvoice.cs" />
+    <Compile Include="Creational\SimpleFactory\Factory.cs" />
+    <Compile Include="Creational\SimpleFactory\IInvoice.cs" />
+    <Compile Include="Creational\SimpleFactory\Program.cs" />
+    <Compile Include="Creational\SimpleFactory\UpsInvoice.cs" />
+    <Compile Include="Structural\Decorator\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structural\Decorator\ConcreateDecorator\AdvancedAccessories.cs" />
     <Compile Include="Structural\Decorator\ConcreateDecorator\BasicAccessories.cs" />
@@ -55,6 +60,8 @@
     <Compile Include="Structural\Decorator\ConcreteProduct\LuxuryCar.cs" />
     <Compile Include="Structural\Decorator\ConcreateDecorator\SportsAccessories.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Creational\FactoryMethod\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
