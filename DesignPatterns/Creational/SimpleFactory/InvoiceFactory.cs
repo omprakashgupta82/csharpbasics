@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Creational.SimpleFactory
 {
-    public class Factory
+    public class InvoiceFactory
     {
         public static IInvoice GetInvoice(int invoiceType)
         {

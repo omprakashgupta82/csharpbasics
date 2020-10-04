@@ -9,5 +9,7 @@ namespace DesignPatterns.Creational.SimpleFactory
     public interface IInvoice
     {
         void PrintInvoice();
+
+        string GetTermsConditions();
     }
 }

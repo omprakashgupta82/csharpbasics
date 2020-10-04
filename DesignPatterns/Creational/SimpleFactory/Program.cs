@@ -12,7 +12,7 @@ namespace DesignPatterns.Creational.SimpleFactory
         {
             Console.Write("Enter the invoice type. 1-> DHL, 2-> UPS : ");
             string invoiceType = Console.ReadLine();
-            IInvoice invoice = Factory.GetInvoice(Convert.ToInt16(invoiceType));
+            IInvoice invoice = InvoiceFactory.GetInvoice(Convert.ToInt16(invoiceType));
 
             if (invoice != null)
                 invoice.PrintInvoice();

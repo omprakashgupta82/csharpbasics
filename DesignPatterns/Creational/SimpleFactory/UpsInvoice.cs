@@ -8,6 +8,11 @@ namespace DesignPatterns.Creational.SimpleFactory
 {
     public class UpsInvoice : IInvoice
     {
+        public string GetTermsConditions()
+        {
+            return "UPS shipping terms & conditions";
+        }
+
         public void PrintInvoice()
         {
             Console.WriteLine("Printing UPS Invoice");

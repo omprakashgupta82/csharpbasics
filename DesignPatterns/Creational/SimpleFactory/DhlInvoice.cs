@@ -8,6 +8,11 @@ namespace DesignPatterns.Creational.SimpleFactory
 {
     public class DhlInvoice : IInvoice
     {
+        public string GetTermsConditions()
+        {
+            return "DHL shipping terms & conditions";
+        }
+
         public void PrintInvoice()
         {
             Console.WriteLine("Printing DHL Invoice");
