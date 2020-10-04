@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DesignPatterns.Creational.SimpleFactory.Program</StartupObject>
+    <StartupObject>DesignPatterns.Creational.FactoryMethod.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,8 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\FactoryMethod\BaseInvoiceFactory.cs" />
+    <Compile Include="Creational\FactoryMethod\DhlInvoice.cs" />
+    <Compile Include="Creational\FactoryMethod\DhlInvoiceFactory.cs" />
+    <Compile Include="Creational\FactoryMethod\InvoiceFactory.cs" />
+    <Compile Include="Creational\FactoryMethod\IInvoice.cs" />
+    <Compile Include="Creational\FactoryMethod\Program.cs" />
+    <Compile Include="Creational\FactoryMethod\UpsInvoice.cs" />
+    <Compile Include="Creational\FactoryMethod\UpsInvoiceFactory.cs" />
     <Compile Include="Creational\SimpleFactory\DhlInvoice.cs" />
-    <Compile Include="Creational\SimpleFactory\Factory.cs" />
+    <Compile Include="Creational\SimpleFactory\InvoiceFactory.cs" />
     <Compile Include="Creational\SimpleFactory\IInvoice.cs" />
     <Compile Include="Creational\SimpleFactory\Program.cs" />
     <Compile Include="Creational\SimpleFactory\UpsInvoice.cs" />
@@ -60,8 +68,6 @@
     <Compile Include="Structural\Decorator\ConcreteProduct\LuxuryCar.cs" />
     <Compile Include="Structural\Decorator\ConcreateDecorator\SportsAccessories.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Creational\FactoryMethod\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
