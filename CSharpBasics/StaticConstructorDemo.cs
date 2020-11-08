@@ -44,6 +44,9 @@ namespace CSharpBasics
         {
             StaticConstructorDemo scd = new StaticConstructorDemo();
             scd.Display();
+
+            MyStaticClass my = new MyStaticClass();
+            Console.WriteLine(my.CharCount("my stats"));
             Console.ReadKey();
         }
 
@@ -109,6 +112,24 @@ namespace CSharpBasics
                                     this.RouteNumber,
                                     elapsedTime.TotalMilliseconds,
                                     globalStartTime.ToShortTimeString());
+        }
+    }
+
+    public class MyStaticClass
+    {
+
+    }
+
+    public static class MyStaticClassExtensions
+    {
+        public static int CharCount(this MyStaticClass myStaticClass, string s)
+        {
+            return s.Length;
+        }
+
+        public static int Sum(this MyStaticClass myStaticClass, int s, int k)
+        {
+            return s+k;
         }
     }
 }

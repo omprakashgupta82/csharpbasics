@@ -9,7 +9,7 @@ namespace CSharpBasics
     {
         public static void Main()
         {
-            List<Person> personLst = new List<Person>() 
+            List<Person> personLst = new List<Person>()
             {
                 new Person(){Name="Kds",Age=34},
                 new Person(){Name="Mad",Age=14},
@@ -29,20 +29,20 @@ namespace CSharpBasics
 
     }
 
-    public class Person //: IComparable<Person>
+    public class Person : IComparable<Person>
     {
         public int Age { get; set; }
         public string Name { get; set; }
 
 
-        //public int CompareTo(Person other)
-        //{
-        //    if (this.Age == other.Age)
-        //    {
-        //        return this.Name.CompareTo(other.Name);
-        //    }
-        //    return this.Age.CompareTo(other.Age);
-        //}
+        public int CompareTo(Person other)
+        {
+            if (this.Age == other.Age)
+            {
+                return this.Name.CompareTo(other.Name);
+            }
+            return this.Name.CompareTo(other.Name);
+        }
 
         public override string ToString()
         {

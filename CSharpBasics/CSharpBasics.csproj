@@ -54,7 +54,7 @@
     <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpBasics.PolymorphismDemo</StartupObject>
+    <StartupObject>CSharpBasics.SortArrayOfStingNumeric</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -97,6 +97,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SealedClassDemo.cs" />
     <Compile Include="SingltionClassDemo.cs" />
+    <Compile Include="SortArrayOfStingNumeric.cs" />
     <Compile Include="StaticConstructorDemo.cs" />
     <Compile Include="StaticMembers.cs" />
     <Compile Include="ExtensionMethods\StringExtensions.cs" />
